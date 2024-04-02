@@ -1,0 +1,16 @@
+<h1>Table</h1>
+<div class="container"><table border="1" class="tabl">
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Mark</th>
+        <th>Result</th>
+    </tr>
+    <tr *ngFor="let detail of details">
+        <td>{{detail.Name|customs:detail.Gender|json}}</td>
+        <td>{{detail.Gender}}</td>
+        <td>{{detail.Mark}}</td>
+        <td>{{detail.Result}}</td>
+    </tr>
+   
+</table></div>
